@@ -3,6 +3,7 @@ const express = require('express')
 const app = express()
 const practiceQuestions = require('./routes/practiceQuestions')
 
+app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 // serving static files
