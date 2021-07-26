@@ -20,3 +20,11 @@ module.exports.question1 = async (req, res) => {
     console.log(err)
   }
 }
+
+module.exports.question2 = (req, res) => {
+  try {
+    res.send('successfully validated')
+  } catch (err) {
+    res.send('Somthing went wrong')
+  }
+}
